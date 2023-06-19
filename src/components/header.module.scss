@@ -1,0 +1,40 @@
+.menu {
+    margin: auto 200px;
+    ul {
+        display: flex;
+        li {
+            a {
+                font-weight: bold;
+                padding: 15px 25px;
+            }
+        }
+    }
+}
+.buttonHolder{
+    display: flex;
+    align-items: center;
+    .button {
+        &:first-child {
+            border-radius: 0 .75rem .75rem 0;
+        }
+        &:last-child:not(.logout) {
+            border-radius: .75rem 0 0 .75rem;
+        }
+        &.logout {
+            border-radius: .75rem;
+        }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 30px;
+        border: solid thin black;
+        margin: 5px 0;
+        &:hover {
+            background: #000;
+            color: white;
+        }
+        svg{
+            margin: auto 5px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: shabnam;
+    src: url("../components/shabnam/Shabnam.woff") format('woff');
+}
+@font-face {
+    font-family: shabnam;
+    src: url("../components/shabnam/Shabnam-Bold.woff") format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: shabnam;
+    src: url("../components/shabnam/Shabnam-Light.woff") format('woff');
+    font-weight: lighter;
+}
+@font-face {
+    font-family: shabnam;
+    src: url("../components/shabnam/Shabnam-Thin.woff") format('woff');
+    font-weight: 100;
+}
+
+body {
+    font-family: shabnam;
+    direction: rtl;
+    font-weight: normal;
+}
+*{
+    transition: all 0.2s ease;
+    scroll-behavior: smooth;
+}
